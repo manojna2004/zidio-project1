@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Sentiment Analysis</title>
+</head>
+<body>
+    
+    <div class="input-container">
+
+        <h1>Sentiment Analysis</h1>
+        <h2>positive || Negative || Neutral</h2>
+        <form id="sentiment-form">
+            <label for="sentiment-input" aria-placeholder="ENTER TEXT">Enter text for analysis:</label>
+            <textarea id="sentiment-input" rows="4" cols="50" placeholder="Enter a Sentence.........."></textarea>
+            <button type="submit" id="analyze-button">Analyze</button>
+        </form>
+        <div id="result"></div>
+       <pre> <h3>😊  😑  😔</h3></pre>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
